@@ -14,7 +14,7 @@ function Main({ curr }) {
     <h4>{`Дата: ${curr.date}`}</h4>
     {keys.filter((el) => el === 'USD' || el === 'EUR' || el === 'CNY')
     .sort()
-    .map((el) => <div className="container p-3 mb-2 bg-info text-white">
+    .map((el) => <div className="container p-3 mb-2 bg-secondary text-white">
     <h2>{`1 ${naming[el]} = ${1/curr.rates[el]} рублей`}</h2>
   </div>)}
     </>

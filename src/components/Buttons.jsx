@@ -9,7 +9,7 @@ const MainButtons = ({ page, pages, setPage, name }) => {
             key={idx}
             id={`${name}-${idx}`}
             type="checkbox"
-            variant="outline-info"
+            variant="outline-success"
             name={`${name}`}
             value={pages.value}
             checked={page === pages.value}
