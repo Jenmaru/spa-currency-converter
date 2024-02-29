@@ -21,7 +21,7 @@ function Main({ curr }) {
   )
 }
 
-function App() {
+const App = () => {
   const [page, setPage] = useState('1');
   const [curr, setCurr] = useState({ rates: '' });
 
@@ -41,7 +41,7 @@ function App() {
       <div className="container" style={{ marginTop: '2rem', }}>
       {page === '1' ? <Main curr={curr} /> : <Converter curr={curr} />}
       </div>
-      </div>
+    </div>
   );
 }
 
