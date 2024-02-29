@@ -55,7 +55,7 @@ const Converter = ({ curr }) => {
               <Form.Label>
                 <Buttons pages={currency} page={valueCurrency} setPage={setCurrency} name="currency" />
               </Form.Label>
-                <Form.Control as="textarea" value={parseInt(firstInput)} onChange={(e) => setFirstInput(e.target.value)} style={{ fontSize: '50px', }} rows={1} />
+                <Form.Control as="textarea" value={firstInput} onChange={(e) => setFirstInput(e.target.value)} style={{ fontSize: '50px', }} rows={1} />
             </Form.Group>
           </Form>
         </div>
@@ -65,7 +65,7 @@ const Converter = ({ curr }) => {
               <Form.Label>
                 <Buttons pages={convert} page={valueConvert} setPage={setConvert} name="convert" />
               </Form.Label>
-                <Form.Control as="textarea" value={parseInt(secondInput)} style={{ fontSize: '50px', }} rows={1} />
+                <Form.Control as="textarea" value={secondInput} style={{ fontSize: '50px', }} rows={1} />
             </Form.Group>
           </Form>
         </div>
