@@ -5,7 +5,7 @@ import Converter from './components/Converter.jsx';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.js';
 
-function Main({ curr }) {
+const Main = ({ curr }) => {
   const naming = { USD: 'доллар', EUR: 'евро', CNY: 'юань', };
   const keys = Object.keys(curr.rates);
 
